@@ -3,19 +3,19 @@
 <div class="container">
     <h1>Add Address</h1>
     <form action="#" method="post"> <!-- "#" places on the same page-->  
-       Full Name: <input name="fullname" value="<?php echo $fullname; ?>" /> <br />
-       Address: <input name="addressline1" value="<?php echo $addressline1; ?>" /> <br />
-       Email: <input name="email" value="<?php echo $email; ?>" /> <br />
-       City: <input name="city" value="<?php echo $city; ?>" /> <br />
+       Full Name: <input name="fullname" value="<?php echo $fullname; ?>" class="form-control" /> <br />
+       Address: <input name="addressline1" value="<?php echo $addressline1; ?>" class="form-control" /> <br />
+       Email: <input name="email" value="<?php echo $email; ?>" class="form-control" /> <br />
+       City: <input name="city" value="<?php echo $city; ?>" class="form-control" /> <br />
        State: 
-       <select name="state">
+       <select name="state" class="btn btn-primary dropdown-toggle form-control">
             <?php foreach ($states as $key => $value): ?> 
-              <option value="<?php echo $key; ?>" <?php if ( $state == $key ): ?> selected="selected" <?php endif; ?>><?php echo $value; ?></option>
+              <option value="<?php echo $key; ?>" <?php if ( $state == $key ): ?> selected="selected"  <?php endif; ?>><?php echo $value; ?></option>
             <?php endforeach; ?>
           </select>
        <br>
-       Zip: <input name="zip" value="<?php echo $zip; ?>" /> <br />
-       Birthday: <input type="date" name="birthday" value="<?php echo $birthday; ?>" /> <br />
+       Zip: <input name="zip" value="<?php echo $zip; ?>" class="form-control" /> <br />
+       Birthday: <input type="date" name="birthday" value="<?php echo $birthday; ?>" class="form-control" /> <br />
        <input type="submit" value="submit" class="btn btn-primary" />
     </form>
-</div>
+</div><butt
