@@ -13,7 +13,7 @@
         
         
         <?php 
-        if ( !is_null($dob) ) {
+        if ( !is_null($dob) ) {        //Puts $dob as a time using strtotime (string to time)
             echo  date("F j, Y, g:i a",strtotime($dob));             
         }
         ?>
