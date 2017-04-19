@@ -4,7 +4,7 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
     </head>
     <body>
         <?php
@@ -37,7 +37,7 @@
                 }
 
                 // You should also check filesize here. 
-                if ($_FILES[$keyName]['size'] > 1000000) {
+                if ($_FILES[$keyName]['size'] > 10000000) {
                     throw new RuntimeException('Exceeded filesize limit.');
                 }
 
@@ -98,6 +98,6 @@
         <?php else: ?>
             <p><?php echo $error; ?></p>
         <?php endif; ?>
-
+    <a href="./view.php">View Files</a>
     </body>
 </html>
