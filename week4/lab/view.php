@@ -12,6 +12,8 @@ and open the template in the editor.
     <body>
         
         <?php
+        //VIEW ALL PAGE///      //VIEW ALL PAGE///
+        
         $folder = './uploads';
 
         $directory = new DirectoryIterator($folder);
@@ -24,16 +26,18 @@ and open the template in the editor.
             <?php foreach ($directory as $fileInfo) : ?>        
                 <?php if ($fileInfo->isFile()) : ?>
                     <tr>
-                        <td>
-                            <ol>
-                                <li><?php echo $fileInfo->getFilename(); ?></li>
-                            </ol>
-                        </td>
+                        <td><?php echo $fileInfo->getFilename(); ?></td>
+                        <td><a href ="details.php?file=<?php echo $fileInfo->getPathname(); ?>">View</a></td>
+                        <td><a href ="delete.php">Delete</a></td>
+                        <td><?php echo $fileInfo->getType(); ?></td>
+                        <td><?php echo $fileInfo->getMTime(); ?></td>
+                        <td><?php echo $fileInfo->getPathname(); ?></td>
                     </tr>
                 <?php endif; ?>
             <?php endforeach; ?> 
                     </thead>
         </table>
             </div>
+        <div class="nav">Click <a href="./upload-form.php">here</a> to add files.</div>
         
     </body>

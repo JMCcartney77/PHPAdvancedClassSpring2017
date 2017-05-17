@@ -20,5 +20,5 @@
         <!-- display imaged
         <img src="uploads/img_30420d1a9afb2bcb60335812569af4435a59ce17.jpg" /> -->
     </body>
-   
+   <div class="nav">Click <a href="./view.php">here</a> to view files.</div>
 </html>
