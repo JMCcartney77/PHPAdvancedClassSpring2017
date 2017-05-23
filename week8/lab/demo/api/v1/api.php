@@ -75,7 +75,7 @@ try {
     } elseif ('login' === $resource) {
         $accounts = new Accounts();
         if ($accounts->login($serverData['email'], $serverData['password'])) {
-            $restServer->setData(array("token" => $jwt->generateJWT(array("email" => 'test@test.com'), $secrect_key)));
+            $restServer->setData(array("token" => $jwt->generateJWT(array("email" => $serverData['email']), $secrect_key)));
         } else{
             throw new InvalidArgumentException($resource . ' Login failed');
         }

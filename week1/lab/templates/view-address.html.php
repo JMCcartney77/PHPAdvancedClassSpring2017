@@ -12,6 +12,8 @@
     <td><?php echo date("F j, Y,",strtotime($row['birthday'])); ?> </td>
     </tr>
 <?php endforeach; ?>
+    
 </table>
+<div class="nav">Click <a href="./add-address.php">here</a> to add another address.</div>
 <?php endif; ?>
 <!Add link to this page-->

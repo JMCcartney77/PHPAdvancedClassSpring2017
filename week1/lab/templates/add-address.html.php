@@ -17,5 +17,6 @@
        Zip: <input name="zip" value="<?php echo $zip; ?>" class="form-control" /> <br />
        Birthday: <input type="date" name="birthday" value="<?php echo $birthday; ?>" class="form-control" /> <br />
        <input type="submit" value="submit" class="btn btn-primary" />
+       <div class="nav">Click <a href="./index.php">here</a> to view addresses.</div>
     </form>
 </div><butt
